@@ -145,6 +145,7 @@
                                   }
                               ]
                           },{
+                              
                               questions: [
                                   {
                                       type: "radiogroup",
@@ -155,6 +156,20 @@
                                           "Intravenous administration of oxytocin", "Antidepressants", "intranasal administration of oxytocin", "genetical therapy"
                                       ],
                                       correctAnswer: "intranasal administration of oxytocin"
+                                  }
+                                ]
+                              
+                            }, {
+                                questions: [
+                                  {
+                                      type: "radiogroup",
+                                      name: "estrogen",
+                                      title:"Which is the best environmental factor modulating rapid action of estradiol?",
+                                      choicesOrder: "random",
+                                      choices: [
+                                          "Photoperiod","Endocrine disruptors", "Pytoestrogens", "Parasites"
+                                        ],
+                                      correctAnswer: "Photoperiod"
                                   }
                               ]
                           },{
@@ -167,12 +182,12 @@
                                       choicesOrder: "random",
                                       choices: [
                                           "Paraventricular hypothalamic nucleus", " hypocampus", "Adrenal gland", "Thyroid"
-                                      ],
+                                              ],
                                       correctAnswer: "Paraventricular hypothalamic nucleus"
                                   }
                               ]
                           }
-                      ],
+                    ],
                       completedHtml: "<h4>You have answered correctly <b>{correctedAnswers}</b> questions from <b>{questionCount}</b>.</h4>"
                   };
 
