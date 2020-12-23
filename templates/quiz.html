@@ -108,7 +108,7 @@
                       showProgressBar: "bottom",
                       showTimerPanel: "top",
                       maxTimeToFinishPage: 10,
-                      maxTimeToFinish: 25,
+                      maxTimeToFinish: 100,
                       firstPageIsStarted: true,
                       startSurveyText: "Start Quiz",
                       pages: [
@@ -116,7 +116,7 @@
                               questions: [
                                   {
                                       type: "html",
-                                      html: "You are about to start quiz about molecular endocrinology. <br/>You have 10 seconds for every page and 25 seconds for the whole survey of 3 questions.<br/>Please click on <b>'Start Quiz'</b> button when you are ready."
+                                      html: "You are about to start quiz about molecular endocrinology. <br/>You have 10 seconds for every question and 100 seconds for the whole survey of 10 questions.<br/>Please click on <b>'Start Quiz'</b> button when you are ready."
                                   }
                               ]
                           }, {
@@ -221,7 +221,7 @@
                                   {
                                       type: "radiogroup",
                                       name: "Production of oxytocin",
-                                      title: "Where is estrogen produced ?",
+                                      title: "Where is estrogen produced?",
                                       choicesOrder: "random",
                                       choices: [
                                           "follicle cells of the ovaries", " hypocampus", "hypothalamus", "Pituitary gland"
@@ -241,6 +241,34 @@
                                           "Sex drive (libido)", " Muscle size and strength", "Sperm production", "stress"
                                               ],
                                       correctAnswer: "stress"
+                                  }
+                              ]
+                          },{
+                              maxTimeToFinish: 15,
+                              questions: [
+                                  {
+                                      type: "radiogroup",
+                                      name: "Testosterone",
+                                      title: "To which of the following receptor does testosterone bind?",
+                                      choicesOrder: "random",
+                                      choices: [
+                                          "Androsterone receptor", "Dopaminergic receptor", "Glycine receptor", "Nicotine receptor", "Insulin receptor"
+                                              ],
+                                      correctAnswer: "Androsterone receptor"
+                                  }
+                              ]
+                          },{
+                              maxTimeToFinish: 15,
+                              questions: [
+                                  {
+                                      type: "radiogroup",
+                                      name: "Testosterone",
+                                      title: "In men, testosterone regulates…",
+                                      choicesOrder: "random",
+                                      choices: [
+                                          "Appetite", "Heart rate", "Menstrual cycle", "Sex drive", "Reward pathways"
+                                              ],
+                                      correctAnswer: "Sex drive"
                                   }
                               ]
                           }
