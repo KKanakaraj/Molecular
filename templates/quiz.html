@@ -119,6 +119,8 @@
                                       html: "You are about to start quiz about molecular endocrinology. <br/>You have 10 seconds for every question and 100 seconds for the whole survey of 10 questions.<br/>Please click on <b>'Start Quiz'</b> button when you are ready."
                                   }
                               ]
+                            
+                    
                           }, {
                               questions: [
                                   {
@@ -158,14 +160,29 @@
                                       correctAnswer: "intranasal administration of oxytocin"
                                   }
                                 ]
-                              
                             }, {
                                 
                                 questions: [
                                   {
                                       type: "radiogroup",
                                       name: "estrogen",
-                                      title:"Which type of polymorphims is mostly associated with differences in socio-behavioral                                              phenotypes?",
+                                      title:"Which behaviour is most affected by estrogen?",
+                                      choicesOrder: "random",
+                                      choices: [
+                                          "Aggressivity","Anxiety", "Depression", "Post-traumatic Stress"
+                                          
+                                        ],
+                                      correctAnswer: "Aggressivity"
+                                  }
+                              ]      
+                                
+                            },{  
+                                
+                                questions: [
+                                  {
+                                      type: "radiogroup",
+                                      name: "estrogen",
+                                      title:"Which type of polymorphims related to oxytocin is mostly associated with differences in socio-behavioral phenotypes?",
                                       choicesOrder: "random",
                                       choices: [
                                           "Single nucleotide polymorphisms","small-scale insertions/deletions", "Polymorphic repetitive elements", "Microsatellite variation"
@@ -174,7 +191,18 @@
                                       correctAnswer: "Single nucleotide polymorphisms"
                                   }
                               ]      
-                                
+                             }, {
+                              questions: [
+                                  {
+                                      type: "radiogroup",
+                                      name: "general",
+                                      title: "Which hormone is importantly involved in learning and memory processes?",
+                                      choices: [
+                                          "Testosterone", "Serotonin", "Oxytocin", "Dopamine", "Estrogen"
+                                      ],
+                                      correctAnswer: "Estrogen"
+                                  }
+                              ]   
                             },{
                                 questions: [
                                   {
